@@ -1,0 +1,260 @@
+header {
+  background-color: #ffffff;
+}
+
+body {
+  background-color: #e3e3ff;
+  text-align: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bannière img {
+  width: 35%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+
+  background: #00327b;
+  color: #ffffff;
+  font-family: "Gill Sans MT Regular", sans-serif;
+}
+
+.bannière {
+  position: relative;
+}
+a
+{
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: #000000;
+}
+
+#menuToggle
+{
+  display: block;
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+
+}
+
+#menuToggle input
+{
+  display: block;
+  margin-top: 30px;
+  margin-right: 40px;
+  width: 78px;
+  height: 80px;
+  position: fixed;
+  top: -5px;
+  left: 81vw;
+  top: 1vh;
+  cursor: pointer;
+  opacity: 0; /* hide this */
+  z-index: 100; /* and place it over the hamburger */
+  -webkit-touch-callout: none;
+}
+
+/*
+ * hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 72px;
+  height: 13px;
+  margin-bottom: 5px;
+  position: relative;
+  left: 81vw;
+  top: 2vh;
+  background: #00327b;
+  border-radius: 5px;
+
+  z-index: 1;
+
+  transform-origin: 21px 5px;
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 0%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #000000;
+}
+
+/*
+ * hide the middle one
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  text-align:center;
+
+  background: #EDB400;
+  list-style-type: none;
+
+  transform-origin: 0% 0%;
+  transform: translate(0, -100%);
+
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+#menu a {
+  color: #000000;
+}
+
+/*
+ * slide it in
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+footer {
+  background-color: #fff;
+}
+
+
+.first {
+  text-align: center;
+  padding-left: 50px;
+  font-weight: lighter;
+}
+
+
+
+p {
+  text-align: left;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 23px;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.NotreDame {
+  width: 80%;
+}
+
+hr {
+  margin-top: 40px;
+}
+
+ul li {
+  text-align: left;
+  font-size: 19px;
+  margin-left: 10px;
+  margin-right: 7px;
+}
+
+.UNDERLINE {
+  text-decoration: underline;
+}
+
+.recyclage {
+  width: 93%;
+}
+
+.nom {
+  margin-bottom: 20px;
+}
+
+.mail {
+  margin-bottom: 20px;
+}
+
+.msg {
+  margin-bottom: 20px;
+}
+
+.Contacter p {
+  text-align: center;
+  margin-left: 10px;
+}
+
+.FirstVente h4 {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+.communauté {
+  width: 80%;
+}
+
+.Secondaire {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.img img {
+  width: 80%;
+}
